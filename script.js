@@ -29,3 +29,11 @@ function TestPromptAndConfirm(){
         alert("GoodBye...");
     }
 }
+
+function sum() {
+    var x = prompt("Enter your expression");
+
+    var result = eval(x);
+      
+    alert(result);
+}

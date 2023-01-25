@@ -4,14 +4,22 @@
         <script src="script.js"></script>
         <script>
             sayHelloFromHead();
-            document.write("<br>Hellllo world</br><br>");
+            document.write("<br>Hello world</br><br>");
+
+            var res = Math.round( Math.random()*10);
+            console.log(res);
+
+
         </script>
     </head>
-    <bod>
+    <body>
         <button onclick=" sayHelloFromEventDriven()">ClickMe</button>
         <script>
             sayHelloFromBody();
             TestPromptAndConfirm();
         </script>
-    </bod>
+
+        <button onclick=" sum()">Test sum</button>
+
+    </body>
 </html>
