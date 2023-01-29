@@ -3,7 +3,7 @@
     <head>
         <script src="script.js"></script>
         <script>
-            sayHelloFromHead();
+            //sayHelloFromHead();
             document.write("<br>Hello world</br><br>");
 
             var res = Math.round( Math.random()*10);
@@ -13,10 +13,21 @@
         </script>
     </head>
     <body>
+
+        <h1 id="header1" class="c1" name ="headerName">First Header!</h1>
+        <span></span>
+        <h1 id="header2" class="c2" >Second Header!</h1>
+
         <button onclick=" sayHelloFromEventDriven()">ClickMe</button>
         <script>
-            sayHelloFromBody();
-            TestPromptAndConfirm();
+            //sayHelloFromBody();
+            //TestPromptAndConfirm();
+            var header1 = document.querySelector("#header1").innerHTML;            
+            var header2 = document.querySelector("span+h1").innerHTML;
+
+            alert(header1);
+            alert(header2);
+
         </script>
 
         <button onclick=" sum()">Test sum</button>
