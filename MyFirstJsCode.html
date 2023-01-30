@@ -4,33 +4,37 @@
         <script src="script.js"></script>
         <script>
             //sayHelloFromHead();
-            document.write("<br>Hello world</br><br>");
+            // document.write("<br>Hello world</br><br>");
 
-            var res = Math.round( Math.random()*10);
-            console.log(res);
+            // var res = Math.round( Math.random()*10);
+            // console.log(res);
 
 
         </script>
     </head>
     <body>
 
-        <h1 id="header1" class="c1" name ="headerName">First Header!</h1>
+        <!-- <h1 id="header1" class="c1" name ="headerName">First Header!</h1>
         <span></span>
-        <h1 id="header2" class="c2" >Second Header!</h1>
+        <h1 id="header2" class="c2" >Second Header!</h1> 
 
-        <button onclick=" sayHelloFromEventDriven()">ClickMe</button>
+        <button onclick=" sayHelloFromEventDriven()">ClickMe</button> -->
         <script>
             //sayHelloFromBody();
             //TestPromptAndConfirm();
-            var header1 = document.querySelector("#header1").innerHTML;            
-            var header2 = document.querySelector("span+h1").innerHTML;
+            // var header1 = document.querySelector("#header1").innerHTML;            
+            // var header2 = document.querySelector("span+h1").innerHTML;
 
-            alert(header1);
-            alert(header2);
+            // alert(header1);
+            // alert(header2);
 
+
+            
         </script>
-
-        <button onclick=" sum()">Test sum</button>
+        <img src="img.jpg" id="img1" onmouseover="event.target.src = 'img2.jpg';" 
+        onmouseout="document.getElementById('img1').src = 'img.jpg';" width="20%"
+        >
+        <!-- <button onclick=" sum()">Test sum</button> -->
 
     </body>
 </html>
