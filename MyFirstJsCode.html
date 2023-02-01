@@ -27,14 +27,30 @@
 
             // alert(header1);
             // alert(header2);
-
-
+            function getProduct() {
+                
             
+            var XHR = new XMLHttpRequest();
+            var prodId = Number(document.getElementById("pId").value);
+            XHR.open("get","https://jsonplaceholder.typicode.com/posts/"+prodId , true);
+
+            XHR.onreadystatechange = function() {
+                if (XHR.readyState == 4 && XHR.status == 200) {
+                    var product = XHR.responseText;
+                    alert(product);
+                }
+            }
+
+            XHR.send();
+
+        }
         </script>
         <img src="img.jpg" id="img1" onmouseover="event.target.src = 'img2.jpg';" 
         onmouseout="document.getElementById('img1').src = 'img.jpg';" width="20%"
         >
         <!-- <button onclick=" sum()">Test sum</button> -->
-
+        <br>
+        <input id="pId" type="text"> 
+        <input type="button" id="button1" onclick="getProduct()" value="SHOW PRODUCT">
     </body>
 </html>
