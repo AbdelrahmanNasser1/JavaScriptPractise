@@ -37,12 +37,18 @@
             XHR.onreadystatechange = function() {
                 if (XHR.readyState == 4 && XHR.status == 200) {
                     var product = XHR.responseText;
-                    alert(product);
+                    showProduct(product);
                 }
             }
 
             XHR.send();
 
+        }
+
+
+        function showProduct(product){
+            let objProduct = JSON.parse(product);
+            document.querySelector("#prod").innerHTML = objProduct.title;
         }
         </script>
         <img src="img.jpg" id="img1" onmouseover="event.target.src = 'img2.jpg';" 
@@ -52,5 +58,6 @@
         <br>
         <input id="pId" type="text"> 
         <input type="button" id="button1" onclick="getProduct()" value="SHOW PRODUCT">
+        <div id="prod"></div>
     </body>
 </html>
