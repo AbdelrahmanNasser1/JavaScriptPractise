@@ -7,8 +7,6 @@ function sayHelloFromBody() {
     console.log(Number("33a"));
     console.log(parseInt("33a"));
     console.log(parseInt("a33"));
-
-
 }
 
 
@@ -16,16 +14,15 @@ function sayHelloFromEventDriven() {
     alert("Hello world from body tag.")
 }
 
-function TestPromptAndConfirm(){
-    var name = prompt("Enter your name: ","");
+function TestPromptAndConfirm() {
+    var name = prompt("Enter your name: ", "");
 
-    alert("Welcome "+ name);
+    alert("Welcome " + name);
 
     var result = confirm("Are you sure?");
-    if(result == true){
+    if (result == true) {
         alert("Thanks...");
-    }
-    else{
+    } else {
         alert("GoodBye...");
     }
 }
@@ -34,6 +31,6 @@ function sum() {
     var x = prompt("Enter your expression");
 
     var result = eval(x);
-      
+
     alert(result);
 }
