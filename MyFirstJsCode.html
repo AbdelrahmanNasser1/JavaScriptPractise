@@ -1,63 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="script.js"></script>
-        <script>
-            //sayHelloFromHead();
-            // document.write("<br>Hello world</br><br>");
-
-            // var res = Math.round( Math.random()*10);
-            // console.log(res);
+<head>
+</head>
+<body>
 
 
-        </script>
-    </head>
-    <body>
+<script src="script.js"></script>
 
-        <!-- <h1 id="header1" class="c1" name ="headerName">First Header!</h1>
-        <span></span>
-        <h1 id="header2" class="c2" >Second Header!</h1> 
-
-        <button onclick=" sayHelloFromEventDriven()">ClickMe</button> -->
-        <script>
-            //sayHelloFromBody();
-            //TestPromptAndConfirm();
-            // var header1 = document.querySelector("#header1").innerHTML;            
-            // var header2 = document.querySelector("span+h1").innerHTML;
-
-            // alert(header1);
-            // alert(header2);
-            function getProduct() {
-                
-            
-            var XHR = new XMLHttpRequest();
-            var prodId = Number(document.getElementById("pId").value);
-            XHR.open("get","https://jsonplaceholder.typicode.com/posts/"+prodId , true);
-
-            XHR.onreadystatechange = function() {
-                if (XHR.readyState == 4 && XHR.status == 200) {
-                    var product = XHR.responseText;
-                    showProduct(product);
-                }
-            }
-
-            XHR.send();
-
-        }
+ <button onclick="myFunction()">Click ME</button>
 
 
-        function showProduct(product){
-            let objProduct = JSON.parse(product);
-            document.querySelector("#prod").innerHTML = objProduct.title;
-        }
-        </script>
-        <img src="img.jpg" id="img1" onmouseover="event.target.src = 'img2.jpg';" 
-        onmouseout="document.getElementById('img1').src = 'img.jpg';" width="20%"
-        >
-        <!-- <button onclick=" sum()">Test sum</button> -->
-        <br>
-        <input id="pId" type="text"> 
-        <input type="button" id="button1" onclick="getProduct()" value="SHOW PRODUCT">
-        <div id="prod"></div>
-    </body>
+</body>
 </html>

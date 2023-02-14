@@ -1,36 +1,11 @@
-function sayHelloFromHead() {
-    alert("Hello world from head tag.")
+function myFunction() {
+    var firstName = "Abdelrahman";
+    var secondName = "Nasser";
+    console.log(typeof firstName + " " + typeof secondName);
+    var json = JSON.parse("55");
+    console.log(typeof json);
 }
-
-function sayHelloFromBody() {
-    alert("Hello world from body tag.")
-    console.log(Number("33a"));
-    console.log(parseInt("33a"));
-    console.log(parseInt("a33"));
-}
-
-
-function sayHelloFromEventDriven() {
-    alert("Hello world from body tag.")
-}
-
-function TestPromptAndConfirm() {
-    var name = prompt("Enter your name: ", "");
-
-    alert("Welcome " + name);
-
-    var result = confirm("Are you sure?");
-    if (result == true) {
-        alert("Thanks...");
-    } else {
-        alert("GoodBye...");
-    }
-}
-
-function sum() {
-    var x = prompt("Enter your expression");
-
-    var result = eval(x);
-
-    alert(result);
-}
+var circu = function (diameter) {
+    return diameter * Math.PI;
+};
+console.log(circu(5));
