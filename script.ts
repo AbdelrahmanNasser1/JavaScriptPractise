@@ -68,3 +68,21 @@ uid = 123;
 //dynamic assign (any)
 let dynamicValue : any;
 let dynamicArray : any[] = [];
+
+let greet : Function;
+greet = () => {
+  console.log("Hello");
+}
+
+const sum = (a?: number , b?: number , c: number | string='teraf') : any=>{
+return a;
+}
+
+let res = sum(4);
+console.log(res);
+
+const minus = (a:number , b: number) :void =>{
+  console.log(a-b);
+}
+
+minus(10,7);
