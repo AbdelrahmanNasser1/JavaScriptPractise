@@ -12,3 +12,21 @@ const circu = (diameter: number) => {
 }
 
 console.log(circu(5));
+
+/*Arrays*/
+
+let strings = ['khaled','reda','monir','tarek'] // strings only
+strings[4] = "tamer"
+for (let i = 0 ; i < strings.length ; i++){
+    console.log('number index'+ i + ': '+ strings[i])
+}
+
+let numbers = [1,2,3,4]
+for (let i = 0 ; i < numbers.length ; i++){
+    console.log('number index'+ i + ': '+ numbers[i])
+}
+let mixedArray = ['tamer',3,4,'sa']
+mixedArray[0]=1
+for (let i = 0 ; i < mixedArray.length ; i++){
+    console.log('number index'+ i + ': '+ mixedArray[i])
+}
